@@ -2,6 +2,7 @@ from collections import deque
 from game import SnakeGame
 from agent import Agent
 
+# Game configuration
 TRAINING = False
 agent = Agent(training=TRAINING, model_file="model.pth")
 game = SnakeGame(render=(not TRAINING), fps=10, grid=(20, 16, 24, 4))
